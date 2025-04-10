@@ -9,7 +9,25 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
  
 public class ExcelReader {
-   
+
+ 
+package utils;
+/**
+* This utility class provides methods to read specific cell values
+* from an Excel sheet using Apache POI library.
+*/
+ 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+ 
+import java.io.FileInputStream;
+import java.io.IOException;
+ 
+public class ExcelReader {
+
     public static FileInputStream file = null;
     public static XSSFWorkbook workbook = null;
     public static String cellValue = null;
