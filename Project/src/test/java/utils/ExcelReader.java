@@ -7,9 +7,10 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
+
  
 public class ExcelReader {
-   
+
     public static FileInputStream file = null;
     public static XSSFWorkbook workbook = null;
     public static String cellValue = null;
@@ -80,4 +81,3 @@ public class ExcelReader {
         return cellValue;
     }
 }
- 
