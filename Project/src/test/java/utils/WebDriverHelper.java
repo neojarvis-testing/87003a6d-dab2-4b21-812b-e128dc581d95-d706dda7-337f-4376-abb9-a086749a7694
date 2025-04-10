@@ -1,5 +1,5 @@
 package utils;
-
+ 
 import java.time.Duration;
 import java.util.Set;
 import org.openqa.selenium.By;
@@ -10,11 +10,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+ 
 public class WebDriverHelper {
-
+ 
     private WebDriver driver;
-
+ 
     /*
      * Descritption: constructor to initialize WebDriver object.
     */
@@ -22,7 +22,7 @@ public class WebDriverHelper {
     {
         this.driver = driver;
     }
-
+ 
     /*
      * Descritption: Method to perfrom click action on an element.
     */
@@ -31,7 +31,7 @@ public class WebDriverHelper {
         WebElement element = driver.findElement(locator);
         element.click();
     }
-
+ 
     /*
      * Description: Method to perform enter action on an element.
     */
@@ -40,7 +40,7 @@ public class WebDriverHelper {
         WebElement element = driver.findElement(locator);
         element.sendKeys(Keys.ENTER);
     }
-
+ 
     /*
      * Description: Method to send some string value as input to an input field.
     */
@@ -49,7 +49,7 @@ public class WebDriverHelper {
         WebElement element = driver.findElement(locator);
         element.sendKeys(key);
     }
-
+ 
     /*
      * Description: Method to perform hover action on an element.
     */
@@ -59,7 +59,7 @@ public class WebDriverHelper {
         Actions action = new Actions(driver);
         action.moveToElement(element).build().perform();
     }
-
+ 
     /*
      * Description: Method to read the text of an element.
     */
@@ -68,7 +68,7 @@ public class WebDriverHelper {
         WebElement element = driver.findElement(locator);
         return element.getText();
     }
-
+ 
     /*
      * Description: Method to read the URL of current web page.
     */
@@ -76,7 +76,7 @@ public class WebDriverHelper {
     {
         return driver.getCurrentUrl();
     }
-
+ 
     /*
      * Description: Method to read the title of current web page.
     */
@@ -84,7 +84,7 @@ public class WebDriverHelper {
     {
         return driver.getTitle();
     }
-
+ 
     /*
      * Description: Method to read the DOM attribute value of an attribute for given element
     */
@@ -93,7 +93,7 @@ public class WebDriverHelper {
         WebElement element = driver.findElement(locator);
         return element.getDomAttribute(attributeName);
     }
-
+ 
     /*
      * Desscription: Mehthod to wait for an element to be visible for given amount of time.
     */
@@ -102,7 +102,7 @@ public class WebDriverHelper {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
-
+ 
     /*
      * Description: Method to wait until element become clickable.
     */
@@ -111,7 +111,7 @@ public class WebDriverHelper {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
         wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
-
+ 
     /*
      * Description: Method to scroll current window by given amount of pixel.
     */
@@ -120,7 +120,7 @@ public class WebDriverHelper {
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("window.scrollBy(0," + pixel + ")", "");
     }
-
+ 
     /*
      * Description: Method to switch window tab.
     */
@@ -128,7 +128,7 @@ public class WebDriverHelper {
     {
         String parentWindowId = driver.getWindowHandle();
         Set<String> allWindowId = driver.getWindowHandles();
-
+ 
         for(String id : allWindowId)
         {
             if(!id.equals(parentWindowId))

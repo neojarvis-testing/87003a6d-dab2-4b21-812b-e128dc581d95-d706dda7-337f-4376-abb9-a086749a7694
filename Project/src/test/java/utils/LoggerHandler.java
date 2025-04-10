@@ -1,15 +1,15 @@
 package utils;
-
+ 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+ 
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
 import org.apache.log4j.PropertyConfigurator;
-
+ 
 public class LoggerHandler {
-
+ 
     private static final Logger logger = Logger.getLogger(LoggerHandler.class);
  
     static {
@@ -18,7 +18,6 @@ public class LoggerHandler {
  
     /**
      * Description: Configures loggers using log4j properties file.
- 
      */
     private static void setupLoggers() {
         try {
@@ -52,7 +51,6 @@ public class LoggerHandler {
  
     /**
      * Description: Logs a debug-level message.
- 
      * @param message The message to be logged at DEBUG level.
      */
     public static void debug(String message) {
@@ -70,7 +68,6 @@ public class LoggerHandler {
  
     /**
      * Description: Logs a warn-level message.
- 
      * @param message The message to be logged at WARN level.
      */
     public static void warn(String message) {
@@ -79,7 +76,6 @@ public class LoggerHandler {
  
     /**
      * Description: Logs an error-level message.
- 
      * @param message The message to be logged at ERROR level.
      */
     public static void error(String message) {
@@ -88,11 +84,10 @@ public class LoggerHandler {
  
     /**
      * Description: Logs a fatal-level message.
- 
      * @param message The message to be logged at FATAL level.
      */
     public static void fatal(String message) {
         logger.fatal(message);
     }
-    
 }
+ 
