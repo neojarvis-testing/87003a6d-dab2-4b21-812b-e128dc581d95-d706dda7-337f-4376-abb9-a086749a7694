@@ -49,7 +49,7 @@ public class Screenshot {
         }
     }
   
-     * Author: Ishan
+     /* Author: Ishan
      * Description: Captures a screenshot of the current browser state and saves it with the specified filename in the "screenshots" directory.
      * @param filename Base name for the screenshot file (a timestamp will be appended to create the full file name).
      */
@@ -75,27 +75,3 @@ public class Screenshot {
  
  
 }
-
-	public static void captureScreenShot(String filename) {
-		String timestamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-		String name = filename + timestamp + ".png";
-		ts = (TakesScreenshot) Base.driver;
-		File file = ts.getScreenshotAs(OutputType.FILE);
-
-		// Create the screenshots directory if it doesn't exist
-		File screenshotsDir = new File(System.getProperty("user.dir") + "/screenshots");
-		if (!screenshotsDir.exists()) {
-			screenshotsDir.mkdirs();
-		}
-
-		File target = new File(screenshotsDir, name);
-		try {
-			Files.copy(file, target);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
- 
-}
-

@@ -90,5 +90,4 @@ public class LoggerHandler {
         logger.fatal(message);
     }
 }
-}
  
