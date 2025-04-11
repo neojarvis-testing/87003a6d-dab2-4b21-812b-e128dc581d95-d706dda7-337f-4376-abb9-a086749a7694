@@ -12,14 +12,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.io.FileHandler;
 import com.google.common.io.Files;
  
  
 public class Screenshot {
  
     public static TakesScreenshot ts;
-
+ 
     /**
      * Author: Ishan
      * Description: This method captures a screenshot of a specific web element on a webpage.
@@ -35,20 +34,23 @@ public class Screenshot {
         JavascriptExecutor js=(JavascriptExecutor) driver;
         js.executeScript("arguments[0].setAttribute('style', 'border:solid 5px red' );", captureElement);
         Thread.sleep(2000);
-        // TakesScreenshot ts=(TakesScreenshot) driver;
+        TakesScreenshot ts=(TakesScreenshot) driver;
         File fs=ts.getScreenshotAs(OutputType.FILE);
-        File target=new File(System.getProperty("user.dir")+"/screenshots");
-        if(!target.exists()){
-            target.mkdirs();
+ 
+        File screenshotsDir = new File(System.getProperty("user.dir") + "/screenshots");
+        if (!screenshotsDir.exists()) {
+            screenshotsDir.mkdirs();
         }
-        FileHandler.copy(fs, new File(target.toString()+screenshotName ));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }catch(InterruptedException e){
+ 
+        File target = new File(screenshotsDir, screenshotName);
+        Files.copy(fs, target);
+    }
+ 
+      catch(Exception e){
           e.printStackTrace();
         }
     }
-  
+ 
      /* Author: Ishan
      * Description: Captures a screenshot of the current browser state and saves it with the specified filename in the "screenshots" directory.
      * @param filename Base name for the screenshot file (a timestamp will be appended to create the full file name).

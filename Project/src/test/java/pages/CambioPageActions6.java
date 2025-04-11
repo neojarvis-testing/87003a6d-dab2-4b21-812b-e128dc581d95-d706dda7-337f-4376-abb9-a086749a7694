@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import uistore.CambioPageLocators6;
 import utils.Base;
@@ -10,11 +11,15 @@ public class CambioPageActions6 {
     WebDriver driver=Base.driver;
     WebDriverHelper helper=new WebDriverHelper(driver);
     public void cambiopageactions(){
-        hoverBike();
+        Verifypagetitle_hoverBike();
         clickbestSeller();
     }
-    public void hoverBike(){
-        helper.waitForElementToBeClickable(CambioPageLocators6.bike_hover,10);
+    public void Verifypagetitle_hoverBike(){
+        // if(helper.getDOMAttribute(CambioPageLocators6.cambiopageverify,"src").contains("cambio")){
+        //     Assert.assertTrue(true);
+        // }else{
+        //     Assert.fail();
+        // }
         helper.hoverAction(CambioPageLocators6.bike_hover);
         
     }

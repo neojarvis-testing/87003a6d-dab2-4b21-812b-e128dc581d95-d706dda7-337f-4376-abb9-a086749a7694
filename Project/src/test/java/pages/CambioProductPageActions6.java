@@ -2,7 +2,6 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 
-import uistore.CambioPageLocators6;
 import uistore.CambioProductPageLocators6;
 import utils.Base;
 import utils.WebDriverHelper;
@@ -11,6 +10,7 @@ public class CambioProductPageActions6 {
     WebDriver driver=Base.driver;
     WebDriverHelper helper=new WebDriverHelper(driver);
     public void cambioproductpageactions6(){
+        
         clickSize();
         hoverProductandClickselect();
     }
