@@ -43,15 +43,13 @@ public class LoginPageActions5 {
         WebDriverHelper wb = new WebDriverHelper(Base.driver);
         String actual = Base.driver.findElement(LoginPageLocator5.credsDontMatch).getText();
         String expected = "These credentials do not match our records.";
-        // Assert.assertEquals(actual, expected);
+        Assert.assertEquals(actual, expected);
 
     }
 
     public static void clickOnNewHere(){
         WebDriverHelper wb = new WebDriverHelper(Base.driver);
         wb.clickAction(LoginPageLocator5.createAccount);
-
-
     }
     
 }

@@ -1,6 +1,5 @@
 package pages;
 
-import uistore.AvonFitnessMachineLocators5;
 import uistore.HomePageLocator5;
 import utils.Base;
 import utils.LoggerHandler;

@@ -8,11 +8,13 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 
 import pages.CheckoutPageAction2;
 import pages.HomePageAction2;
 import pages.ProductListPageAction2;
 import utils.Base;
+import utils.LoggerHandler;
 import utils.Reporter;
 
 public class TestAvoncycles2 extends Base {
@@ -47,14 +49,24 @@ public class TestAvoncycles2 extends Base {
             productlistpage.clickOnProduct(test);
             productlistpage.clickOnBuy(test);
 
-            checkoutpage.fillDetails(test);
+            checkoutpage.enterFirstName(test);
+            checkoutpage.enterLastName(test);
+            checkoutpage.enterEmail(test);
+            checkoutpage.enterPhone(test);
+            checkoutpage.enterPostCode(test);
+            checkoutpage.enterState(test);
+            checkoutpage.enterCity(test);
+            checkoutpage.enterAddress(test);
+            
             checkoutpage.applyCoupon(test);
             checkoutpage.clickOnPaymentGateway(test);
             checkoutpage.clickOnConfirmCheckout(test);
         }
         catch(Exception e)
         {
-            System.out.println(e.getMessage());
+            test.log(Status.FAIL, e.getMessage());
+            LoggerHandler.error(e.getMessage());
+
         }
     }
 

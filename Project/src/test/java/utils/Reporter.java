@@ -5,10 +5,14 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
- 
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
- 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -92,6 +96,5 @@ public class Reporter {
         } catch (Exception e) {
             e.printStackTrace();
         }
- 
     }
 }
