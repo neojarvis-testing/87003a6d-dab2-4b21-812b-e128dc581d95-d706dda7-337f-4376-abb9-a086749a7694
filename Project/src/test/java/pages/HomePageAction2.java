@@ -26,7 +26,7 @@ public class HomePageAction2 {
 
     public void SearchForValue(ExtentTest test)
     {
-        String value = ExcelReader.readCellValue("Sheet1", "1", "value");
+        String value = ExcelReader.readCellValue("Sheet1", "searchValue", "value");
         helper.clickAction(HomePageLocator2.searchBar);
         helper.sendKeys(HomePageLocator2.searchBar, value);
         helper.clickAction(HomePageLocator2.searchIcon2);

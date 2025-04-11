@@ -36,7 +36,7 @@ public class Screenshot {
         Thread.sleep(2000);
         TakesScreenshot ts=(TakesScreenshot) driver;
         File fs=ts.getScreenshotAs(OutputType.FILE);
- 
+
         File screenshotsDir = new File(System.getProperty("user.dir") + "/screenshots");
         if (!screenshotsDir.exists()) {
             screenshotsDir.mkdirs();
@@ -45,7 +45,7 @@ public class Screenshot {
         File target = new File(screenshotsDir, screenshotName);
         Files.copy(fs, target);
     }
- 
+
       catch(Exception e){
           e.printStackTrace();
         }

@@ -19,7 +19,8 @@ public class ElectricCyclePageLocators1 {
     public static By firstValuePrice = By.cssSelector("#radio1");
     public static By clearFilter = By.cssSelector("div[class='filter clear applyFilterButton active']");
     public static By categories = By.cssSelector("a[href='https://avoncycles.com/category']");
-    public static By bicycleCategoryOnPage = By.cssSelector("h5[class='post-classic-title']");
-    public static By biCycleCatLabel = By.cssSelector("h1[class='heading mb-0']");
+
+   
+ 
     
 }
