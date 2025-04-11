@@ -1,3 +1,4 @@
+
 package runner;
 
 import org.testng.annotations.AfterClass;
@@ -31,7 +32,7 @@ public class TestAvonCycles5 extends Base {
 
     @BeforeClass
     public void reportConfig(){
-        report = Reporter.createReporter("Avon cycles");
+        report = Reporter.createReporter("Avon Cycle");
     }
 
     @Test(enabled = true)

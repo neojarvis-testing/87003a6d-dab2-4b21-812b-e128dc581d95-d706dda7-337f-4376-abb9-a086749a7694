@@ -1,11 +1,8 @@
 package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
-
-
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-
 import uistore.HomePageHeaderLocator4;
 import utils.Base;
 import utils.LoggerHandler;
@@ -21,23 +18,20 @@ public class HomePageHeaderAction4 {
         try{
             Base.driver.navigate().back();
             driverHelper.clickAction(HomePageHeaderLocator4.clickDealerLocator);
-            LoggerHandler.info("clicked on "+ driverHelper.getText(HomePageHeaderLocator4.clickDealerLocator));
+            LoggerHandler.info("clicked on Dealer Locator");
+            test.log(Status.INFO, "clicked on Dealer Locator");
             Select select = new Select(Base.driver.findElement(By.name("stateFilter")));
             select.selectByValue("4");
             Thread.sleep(1000);
-            Select selectone = new
-            Select(Base.driver.findElement(By.name("cityFilter")));
+            Select selectone = new Select(Base.driver.findElement(By.name("cityFilter")));
             selectone.selectByValue("327");
-            Thread.sleep(1000);
             driverHelper.clickAction(HomePageHeaderLocator4.clickSearchIcon);
             Screenshot.captureScreenShot("citypage");
             Reporter.attachScreenshotToReport("CityPage", test, "screenshot clicked");
-            LoggerHandler.info("Captured Screenshot");
+            LoggerHandler.info("Screenshot Captured");
             test.log(Status.INFO, "Screenshot Captured");
-        }catch(AssertionError |Exception e){
+        }catch(Exception e){
             e.printStackTrace();
         }
     }
-
-
 }
