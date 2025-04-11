@@ -15,7 +15,7 @@ import utils.WebDriverHelper;
 public class HomePageAction1 {
     WebDriverHelper wdh = new WebDriverHelper(Base.driver);
 
-    public void hmpageAction(ExtentTest test) {
+    public void hoverOnBicycleAndClickOnElectric(ExtentTest test) {
         try {
             wdh.hoverAction(HomePageLocators1.bicycleCategory);
             LoggerHandler.info("hovered on bicycle category");

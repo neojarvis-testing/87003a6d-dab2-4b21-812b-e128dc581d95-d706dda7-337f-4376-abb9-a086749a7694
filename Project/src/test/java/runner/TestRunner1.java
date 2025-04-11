@@ -36,8 +36,19 @@ public class TestRunner1 extends Base{
         HomePageAction1 hpa = new HomePageAction1();
         ElectricCyclePageAction1 ecp = new ElectricCyclePageAction1();
         CategoryPageAction1 cpa = new CategoryPageAction1();
-        hpa.hmpageAction(test);
-        ecp.electricCycleFiltering(test);
+        hpa.hoverOnBicycleAndClickOnElectric(test);
+
+
+        ecp.clickOnPriceAndReview(test);
+        ecp.clickOnFirstReviewAndClickOnSize(test);
+        ecp.clickOnFirstSizeAndClickOnSize(test);
+        ecp.clickOnAcceptCookiesAndFirstHeight(test);
+        ecp.clickOnAgeAndFirstAge(test);
+        ecp.clickOnColorSwatchAndFirstPrice(test);
+        ecp.scrollAndClickClearFilter(test);
+        ecp.clickOnCategories(test);
+
+
         cpa.categorySelection(test);
     }
 
