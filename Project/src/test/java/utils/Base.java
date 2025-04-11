@@ -91,7 +91,6 @@ public class Base {
 
         WebDriverListener listener = new EventHandler();
         driver = new EventFiringDecorator<>(listener).decorate(driver);
-        
 
     }
 

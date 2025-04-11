@@ -2,4 +2,8 @@ logs/
 screenshots/
 reports/
 testdata/
+<<<<<<< HEAD
 target/
+=======
+target/
+>>>>>>> 50904adb2347fcbfc758fa17e2e3a9586ba3ed6f
