@@ -14,6 +14,7 @@ import pages.ElectricCyclePageAction1;
 import pages.HomePageAction1;
 import utils.Base;
 import utils.Reporter;
+import utils.Screenshot;
 
 public class TestRunner1 extends Base{
 
@@ -47,9 +48,10 @@ public class TestRunner1 extends Base{
         ecp.clickOnColorSwatchAndFirstPrice(test);
         ecp.scrollAndClickClearFilter(test);
         ecp.clickOnCategories(test);
-
+        
 
         cpa.categorySelection(test);
+        cpa.assertAndVerify(test);
     }
 
     @AfterMethod

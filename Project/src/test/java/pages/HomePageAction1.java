@@ -9,7 +9,6 @@ import com.aventstack.extentreports.Status;
 import uistore.HomePageLocators1;
 import utils.Base;
 import utils.LoggerHandler;
-import utils.Screenshot;
 import utils.WebDriverHelper;
 
 public class HomePageAction1 {
@@ -23,7 +22,6 @@ public class HomePageAction1 {
             wdh.clickAction(HomePageLocators1.electricCycles);
             LoggerHandler.info("clicked on electric cycles");
             test.log(Status.INFO, "clicked on electric cycles");
-
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

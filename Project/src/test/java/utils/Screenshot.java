@@ -12,7 +12,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.io.FileHandler;
 import com.google.common.io.Files;
  
  
@@ -35,16 +34,19 @@ public class Screenshot {
         JavascriptExecutor js=(JavascriptExecutor) driver;
         js.executeScript("arguments[0].setAttribute('style', 'border:solid 5px red' );", captureElement);
         Thread.sleep(2000);
-        // TakesScreenshot ts=(TakesScreenshot) driver;
+        TakesScreenshot ts=(TakesScreenshot) driver;
         File fs=ts.getScreenshotAs(OutputType.FILE);
-        File target=new File(System.getProperty("user.dir")+"/screenshots");
-        if(!target.exists()){
-            target.mkdirs();
+
+        File screenshotsDir = new File(System.getProperty("user.dir") + "/screenshots");
+        if (!screenshotsDir.exists()) {
+            screenshotsDir.mkdirs();
         }
-        FileHandler.copy(fs, new File(target.toString()+screenshotName ));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }catch(InterruptedException e){
+ 
+        File target = new File(screenshotsDir, screenshotName);
+        Files.copy(fs, target);
+    }
+
+      catch(Exception e){
           e.printStackTrace();
         }
     }

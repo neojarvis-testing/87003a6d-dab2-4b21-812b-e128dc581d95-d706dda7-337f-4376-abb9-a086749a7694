@@ -20,12 +20,16 @@ public class CategoryPageAction1 {
             LoggerHandler.info("clicked on bicycle category");
             test.log(Status.INFO, "clicked on bicycle category");
             wdh.waitForElementToBeVisible(CategoryPageLocator1.biCycleCatLabel, 3);
+    }
+    
+    public void assertAndVerify(ExtentTest test){
             Assert.assertEquals(wdh.getText(CategoryPageLocator1.biCycleCatLabel), "Bicycle Category");
             LoggerHandler.info("verified the label bicycle category");
-            test.log(Status.INFO, "verified the label bicycle category");
+            test.log(Status.PASS, "verified the label bicycle category");
             Screenshot.captureScreenShot("screenshot");
             LoggerHandler.info("captured screenshot");
             test.log(Status.INFO, "captured screenshot");
+            test.log(Status.PASS, "test case 02 passed");
     }
     
 }
