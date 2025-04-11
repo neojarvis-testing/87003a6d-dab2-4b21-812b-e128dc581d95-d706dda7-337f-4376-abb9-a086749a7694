@@ -1,33 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-10T12:05:15 UTC" name="Surefire suite" finished-at="2025-04-10T12:05:34 UTC" duration-ms="19173">
+  <suite started-at="2025-04-11T12:29:36 UTC" name="Surefire suite" finished-at="2025-04-11T12:31:29 UTC" duration-ms="113646">
     <groups>
     </groups>
-    <test started-at="2025-04-10T12:05:15 UTC" name="Surefire test" finished-at="2025-04-10T12:05:34 UTC" duration-ms="19173">
-      <class name="runner.TestAvoncycles">
-        <test-method is-config="true" signature="configReport()[pri:0, instance:runner.TestAvoncycles@14ec4505]" started-at="2025-04-10T12:05:15 UTC" name="configReport" finished-at="2025-04-10T12:05:16 UTC" duration-ms="527" status="PASS">
+    <test started-at="2025-04-11T12:29:36 UTC" name="Surefire test" finished-at="2025-04-11T12:31:29 UTC" duration-ms="113646">
+      <class name="runner.TestRunner6">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:runner.TestRunner6@149e0f5d]" started-at="2025-04-11T12:29:54 UTC" name="launchBrowser" finished-at="2025-04-11T12:29:59 UTC" duration-ms="4991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="avon()[pri:0, instance:runner.TestRunner6@149e0f5d]" started-at="2025-04-11T12:29:59 UTC" name="avon" finished-at="2025-04-11T12:30:10 UTC" duration-ms="10784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- avon -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:runner.TestRunner6@149e0f5d]" started-at="2025-04-11T12:30:10 UTC" name="closeBrowser" finished-at="2025-04-11T12:30:10 UTC" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:runner.TestRunner6@149e0f5d]" started-at="2025-04-11T12:30:10 UTC" name="launchBrowser" finished-at="2025-04-11T12:30:16 UTC" duration-ms="5802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="cambio()[pri:0, instance:runner.TestRunner6@149e0f5d]" started-at="2025-04-11T12:30:16 UTC" name="cambio" finished-at="2025-04-11T12:30:39 UTC" duration-ms="23382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cambio -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:runner.TestRunner6@149e0f5d]" started-at="2025-04-11T12:30:39 UTC" name="closeBrowser" finished-at="2025-04-11T12:30:39 UTC" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- runner.TestRunner6 -->
+      <class name="runner.TestRunner1">
+        <test-method is-config="true" signature="initConfig()[pri:0, instance:runner.TestRunner1@79efed2d]" started-at="2025-04-11T12:29:36 UTC" name="initConfig" finished-at="2025-04-11T12:29:43 UTC" duration-ms="6988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initConfig -->
+        <test-method signature="testCase()[pri:0, instance:runner.TestRunner1@79efed2d]" started-at="2025-04-11T12:29:43 UTC" name="testCase" finished-at="2025-04-11T12:29:54 UTC" duration-ms="11002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase -->
+        <test-method is-config="true" signature="endConfig()[pri:0, instance:runner.TestRunner1@79efed2d]" started-at="2025-04-11T12:29:54 UTC" name="endConfig" finished-at="2025-04-11T12:29:54 UTC" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endConfig -->
+      </class> <!-- runner.TestRunner1 -->
+      <class name="runner.TestAvonCycles5">
+        <test-method is-config="true" signature="reportConfig()[pri:0, instance:runner.TestAvonCycles5@1b1473ab]" started-at="2025-04-11T12:30:39 UTC" name="reportConfig" finished-at="2025-04-11T12:30:39 UTC" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportConfig -->
+        <test-method is-config="true" signature="openBr()[pri:0, instance:runner.TestAvonCycles5@1b1473ab]" started-at="2025-04-11T12:30:39 UTC" name="openBr" finished-at="2025-04-11T12:30:46 UTC" duration-ms="6385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBr -->
+        <test-method signature="testCase5()[pri:0, instance:runner.TestAvonCycles5@1b1473ab]" started-at="2025-04-11T12:30:46 UTC" name="testCase5" finished-at="2025-04-11T12:31:00 UTC" duration-ms="14418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase5 -->
+        <test-method is-config="true" signature="killBrowser()[pri:0, instance:runner.TestAvonCycles5@1b1473ab]" started-at="2025-04-11T12:31:00 UTC" name="killBrowser" finished-at="2025-04-11T12:31:00 UTC" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killBrowser -->
+        <test-method is-config="true" signature="openBr()[pri:0, instance:runner.TestAvonCycles5@1b1473ab]" started-at="2025-04-11T12:31:00 UTC" name="openBr" finished-at="2025-04-11T12:31:07 UTC" duration-ms="6639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBr -->
+        <test-method signature="testCase6()[pri:0, instance:runner.TestAvonCycles5@1b1473ab]" started-at="2025-04-11T12:31:07 UTC" name="testCase6" finished-at="2025-04-11T12:31:23 UTC" duration-ms="16340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase6 -->
+        <test-method is-config="true" signature="killBrowser()[pri:0, instance:runner.TestAvonCycles5@1b1473ab]" started-at="2025-04-11T12:31:23 UTC" name="killBrowser" finished-at="2025-04-11T12:31:23 UTC" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killBrowser -->
+        <test-method is-config="true" signature="repF()[pri:0, instance:runner.TestAvonCycles5@1b1473ab]" started-at="2025-04-11T12:31:23 UTC" name="repF" finished-at="2025-04-11T12:31:24 UTC" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- repF -->
+      </class> <!-- runner.TestAvonCycles5 -->
+      <class name="runner.TestAvoncycles2">
+        <test-method is-config="true" signature="configReport()[pri:0, instance:runner.TestAvoncycles2@2f7c2f4f]" started-at="2025-04-11T12:31:24 UTC" name="configReport" finished-at="2025-04-11T12:31:24 UTC" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configReport -->
-        <test-method is-config="true" signature="configBrowser()[pri:0, instance:runner.TestAvoncycles@14ec4505]" started-at="2025-04-10T12:05:16 UTC" name="configBrowser" finished-at="2025-04-10T12:05:23 UTC" duration-ms="6670" status="PASS">
+        <test-method is-config="true" signature="configBrowser()[pri:0, instance:runner.TestAvoncycles2@2f7c2f4f]" started-at="2025-04-11T12:31:24 UTC" name="configBrowser" finished-at="2025-04-11T12:31:29 UTC" duration-ms="5454" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBrowser -->
-        <test-method signature="TestCaseOne()[pri:0, instance:runner.TestAvoncycles@14ec4505]" started-at="2025-04-10T12:05:23 UTC" name="TestCaseOne" finished-at="2025-04-10T12:05:34 UTC" duration-ms="11498" status="PASS">
+        <test-method signature="TestCaseOne()[pri:0, instance:runner.TestAvoncycles2@2f7c2f4f]" started-at="2025-04-11T12:31:29 UTC" name="TestCaseOne" finished-at="2025-04-11T12:31:29 UTC" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCaseOne -->
-        <test-method is-config="true" signature="freeResources()[pri:0, instance:runner.TestAvoncycles@14ec4505]" started-at="2025-04-10T12:05:34 UTC" name="freeResources" finished-at="2025-04-10T12:05:34 UTC" duration-ms="135" status="PASS">
+        <test-method is-config="true" signature="freeResources()[pri:0, instance:runner.TestAvoncycles2@2f7c2f4f]" started-at="2025-04-11T12:31:29 UTC" name="freeResources" finished-at="2025-04-11T12:31:29 UTC" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- freeResources -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:runner.TestAvoncycles@14ec4505]" started-at="2025-04-10T12:05:34 UTC" name="flushReport" finished-at="2025-04-10T12:05:34 UTC" duration-ms="273" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:runner.TestAvoncycles2@2f7c2f4f]" started-at="2025-04-11T12:31:29 UTC" name="flushReport" finished-at="2025-04-11T12:31:29 UTC" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-      </class> <!-- runner.TestAvoncycles -->
+      </class> <!-- runner.TestAvoncycles2 -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>
