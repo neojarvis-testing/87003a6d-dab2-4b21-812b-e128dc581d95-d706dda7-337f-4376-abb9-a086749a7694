@@ -21,7 +21,7 @@ public class TestRunner6 extends Base{
     @Test
     public void cambio(){
         CambioPageActions6 cambioPageActions=new CambioPageActions6();
-        cambioPageActions.Cambioactions();
+        cambioPageActions.cambiopageactions();
     }
     @AfterMethod
     public void closeBrowser(){
