@@ -18,7 +18,7 @@ import com.google.common.io.Files;
 public class Screenshot {
  
     public static TakesScreenshot ts;
-
+ 
     /**
      * Author: Ishan
      * Description: This method captures a screenshot of a specific web element on a webpage.
@@ -50,7 +50,7 @@ public class Screenshot {
           e.printStackTrace();
         }
     }
-  
+ 
      /* Author: Ishan
      * Description: Captures a screenshot of the current browser state and saves it with the specified filename in the "screenshots" directory.
      * @param filename Base name for the screenshot file (a timestamp will be appended to create the full file name).
