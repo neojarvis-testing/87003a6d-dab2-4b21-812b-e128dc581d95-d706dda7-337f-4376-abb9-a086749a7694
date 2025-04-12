@@ -11,7 +11,7 @@ import org.apache.log4j.PatternLayout;
 * at different levels such as TRACE, DEBUG, INFO, WARN, ERROR, and FATAL.
 * It sets up logging configuration and appends log messages to timestamped files.
 *
-* Creator: Bharshini V
+* Creator: Ishan
 */
 public class LoggerHandler {
     private static final Logger logger = Logger.getLogger(LoggerHandler.class);

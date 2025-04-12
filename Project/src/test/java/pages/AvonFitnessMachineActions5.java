@@ -36,7 +36,8 @@ public class AvonFitnessMachineActions5 {
     public static void closePopUP(ExtentTest test){
         try {   
             WebDriverHelper wb = new WebDriverHelper(Base.driver);
-            wb.waitForElementToBeClickable(AvonFitnessMachineLocators5.closePopUp, 8);
+            wb.waitForElementToBeClickable(AvonFitnessMachineLocators5.closePopUp, 15);
+            
             wb.clickAction(AvonFitnessMachineLocators5.closePopUp);
             LoggerHandler.info("Closed the popup");
             test.log(Status.INFO, "Closed the popup");

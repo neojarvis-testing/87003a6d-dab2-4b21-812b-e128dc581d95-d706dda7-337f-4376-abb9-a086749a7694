@@ -128,6 +128,7 @@ public class BusinessPageActions3 {
     }
     public void inputSubjectField(ExtentTest test){
         try {
+            Thread.sleep(2000);
             helper.clickAction(BusinessPageLocators3.inputSubject);
             test.log(Status.INFO, "clicked on subject field");
             LoggerHandler.info("clicked on subject field");
@@ -143,12 +144,13 @@ public class BusinessPageActions3 {
     }
     public void inputMsg(ExtentTest test){
         try {
+            Thread.sleep(2000);
             helper.clickAction(BusinessPageLocators3.inputYourMsg);
             test.log(Status.INFO, "clicked on message field");
             LoggerHandler.info("clicked on message field");
  
             helper.sendKeys(BusinessPageLocators3.inputYourMsg, ExcelReader.readCellValue("Avinash", "8", "value"));
-   
+            Thread.sleep(3000);
             helper.clickAction(BusinessPageLocators3.clickSendButton);
             test.log(Status.INFO,"clicked on send button");
             LoggerHandler.info("clicked on send button");

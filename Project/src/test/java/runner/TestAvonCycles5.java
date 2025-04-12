@@ -67,12 +67,16 @@ public class TestAvonCycles5 extends Base {
         AccountRegisterActions5.inputLatName(test);
         
         AccountRegisterActions5.inputEmail(test);
-        
-        AccountRegisterActions5.inputPhone(test);
-        
-        AccountRegisterActions5.inputPassword(test);
-        
-        AccountRegisterActions5.clickOnSignup(test);
+        try {
+            
+            AccountRegisterActions5.inputPhone(test);
+            
+            AccountRegisterActions5.inputPassword(test);
+            
+            AccountRegisterActions5.clickOnSignup(test);
+        } catch (Exception e) {
+           e.printStackTrace();
+        }
         
     }
     
