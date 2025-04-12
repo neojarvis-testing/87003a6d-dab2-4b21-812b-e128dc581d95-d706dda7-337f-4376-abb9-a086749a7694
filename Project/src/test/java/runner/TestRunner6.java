@@ -1,14 +1,14 @@
 package runner;
-
+ 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
+ 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-
+ 
 import pages.AvonPageActions6;
 import pages.CambioCartPageActions6;
 import pages.CambioPageActions6;
@@ -16,14 +16,14 @@ import pages.CambioProductPageActions6;
 import pages.HomePageActions6;
 import utils.Base;
 import utils.Reporter;
-
+ 
 public class TestRunner6 extends Base{
     public ExtentReports reports;
     public ExtentTest test;
-
+ 
     @BeforeClass
     public void generateReport(){
-        reports = Reporter.createReporter("Avon Test");
+        reports = Reporter.createReporter("Avon Cycle");
     }
     @BeforeMethod
     public void launchBrowser(){
@@ -57,5 +57,5 @@ public class TestRunner6 extends Base{
     public void closeReport(){
         reports.flush();
     }
-
+ 
 }

@@ -1,12 +1,12 @@
 package pages;
-
+ 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-
+ 
 import uistore.CambioPageLocators6;
 import utils.Base;
 import utils.WebDriverHelper;
-
+ 
 public class CambioPageActions6 {
     WebDriver driver=Base.driver;
     WebDriverHelper helper=new WebDriverHelper(driver);
@@ -21,13 +21,11 @@ public class CambioPageActions6 {
         //     Assert.fail();
         // }
         helper.hoverAction(CambioPageLocators6.bike_hover);
-        
+       
     }
     public void clickbestSeller(){
         helper.clickAction(CambioPageLocators6.bestseller);
-
+ 
     }
-
+ 
 }
-
-

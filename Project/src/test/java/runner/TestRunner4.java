@@ -66,5 +66,4 @@ public class TestRunner4 extends Base{
     public void closeReport(){
         reports.flush();
     }
-    
 }

@@ -1,13 +1,13 @@
 package pages;
-
+ 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-
+ 
 import uistore.AvonPageLocators6;
 import uistore.HomePageLocators6;
 import utils.Base;
 import utils.WebDriverHelper;
-
+ 
 public class HomePageActions6 {
     WebDriver driver=Base.driver;
     WebDriverHelper helper=new WebDriverHelper(driver);
@@ -30,7 +30,7 @@ public class HomePageActions6 {
         helper.clickAction(HomePageLocators6.Avon);
         Assert.assertEquals(driver.getCurrentUrl(), "https://avoncycles.com/brand/avon.html");
     }
-
+ 
     public void Cambioactions(){
         helper.scrollwindow(10000);
         helper.clickAction(HomePageLocators6.cambio);
